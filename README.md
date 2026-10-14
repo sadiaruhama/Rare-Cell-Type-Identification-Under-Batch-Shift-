@@ -12,8 +12,7 @@ This repository contains the complete experimental pipeline for a study on ident
 
 Rare cell types — drug-resistant cancer cells, rare immune-cell subsets, early-stage disease cells — are visually subtle and appear at extremely low frequency in microscopy data. Standard supervised classifiers struggle because there are too few labeled examples to train on, and models trained on imbalanced data tend to be overconfident on the classes they rarely see.
 
-This project investigates whether a **frozen self-supervised backbone**, adapted with a **parameter-efficient fine-tuning method**, and coupled to a **class-imbalance-aware acquisition function**, can make active learning practical under extreme rarity and real batch-level domain shift.
-
+This project investigates whether parameter-efficient adaptation of a self-supervised vision foundation model, combined with Bayesian uncertainty estimation and class-aware active learning, can improve rare-class recognition under limited supervision. Experiments use the LIVECell microscopy dataset, with a constructed rare-class scenario and held-out imaging wells to evaluate performance under class imbalance and batch-level variation.
 ### Pipeline
 
 ```text
